@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fenty Beauty South Africa</title>
+  <style>
+    /* Reset + Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80") center/cover fixed no-repeat;
+    }<!DOCTYPE html>
 <!-- saved from url=(0069)file:///C:/Users/User/Documents/FEntY%20&%20SHii/stundet-2.html#about -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
@@ -323,3 +337,312 @@
 
 
 </body></html>
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    nav li {
+      font-weight: 500;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    nav li:hover { color: #a83279; }
+    .nav-icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .search-box {
+      display: none;
+      position: absolute;
+      top: 70px; right: 40px;
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .search-box input {
+      border: 1px solid #ccc;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      background: rgba(0,0,0,0.45);
+      position: relative;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      padding: 20px;
+    }
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+    .btn-primary {
+      background: #000;
+      color: #fff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn-primary:hover { background: #333; }
+
+    /* Section */
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 60px auto;
+      border-radius: 15px;
+      position: relative;
+      color: #fff;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .feature-card {
+      background: rgba(0,0,0,0.55);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .feature-card:hover { transform: translateY(-5px); }
+    .feature-card h3 {
+      font-size: 1.3rem;
+      color: #ffdde1;
+      margin-bottom: 10px;
+    }
+
+    /* Section Backgrounds */
+    #shop {
+      background: url("https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1200&q=80") center/cover;
+    }
+    .shade-finder {
+      background: url("https://images.unsplash.com/photo-1589984662646-44a7e1dc2a77?auto=format&fit=crop&w=1200&q=80") center/cover;
+    }
+    .faq-section {
+      background: url("https://images.unsplash.com/photo-1581090700227-4c4f50b1c67a?auto=format&fit=crop&w=1200&q=80") center/cover;
+    }
+    .promises-section {
+      background: url("https://images.unsplash.com/photo-1584367369194-4e5f8aa5f469?auto=format&fit=crop&w=1200&q=80") center/cover;
+    }
+
+    /* Dark overlay for readability */
+    #shop::before,
+    .shade-finder::before,
+    .faq-section::before,
+    .promises-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.55);
+      border-radius: 15px;
+      z-index: 0;
+    }
+    section * { position: relative; z-index: 1; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 1px solid #ddd;
+      margin-top: 50px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 15px;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .hero-content h2 { font-size: 2rem; }
+      nav ul { gap: 15px; }
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>FENTY BEAUTY</h1>
+    <nav>
+      <ul>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#shade-finder">Shade Finder</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="nav-icons">
+        <i class="ri-search-line" id="search-icon"></i>
+        <i class="ri-heart-line" onclick="alert('Favourites coming soon!')"></i>
+        <i class="ri-shopping-cart-line" onclick="alert('Cart is empty!')"></i>
+        <button class="btn-primary" style="padding:8px 18px;">Sign In</button>
+      </div>
+    </nav>
+    <div class="search-box" id="search-box">
+      <input type="text" placeholder="Search Fenty..." />
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Beauty for Every Shade</h2>
+      <p>Inclusive beauty, now made easier for South Africa 🇿🇦</p>
+      <button class="btn-primary">Explore Collection</button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="shop">
+    <h2>Why Shop Fenty Beauty in South Africa?</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Local Currency Convenience</h3>
+        <p>Shop in South African Rands (ZAR) — no international conversion fees.</p>
+        <p>Secure payments with PayFast, EFT, SnapScan, Zapper, Capitec Pay.</p>
+        <p>All major cards accepted: Visa & Mastercard.</p>
+      </div>
+      <div class="feature-card" id="delivery">
+        <h3>Fast & Reliable Delivery</h3>
+        <p>Nationwide shipping: 7-14 business days.</p>
+        <p>Transparent customs & taxes shown before checkout.</p>
+        <p>Real-time tracking from warehouse to your door.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Shade Match Guarantee</h3>
+        <p>AI-powered shade finder tool calibrated for African undertones.</p>
+        <p>Upload a selfie for instant personalized recommendations.</p>
+        <p>Free exchange on your first shade mismatch.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Exclusive Offers for SA Shoppers</h3>
+        <p>Launch discounts on Pro Filt’r foundation.</p>
+        <p>Limited edition bundles available only in South Africa.</p>
+        <p>Student specials & YouthX collabs for young shoppers.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Trusted by South Africans</h3>
+        <p>Rated 4.8/5 stars by SA customers.</p>
+        <p>Endorsed by local beauty influencers.</p>
+        <p>Over 10,000 happy customers nationwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shade Finder CTA -->
+  <section class="shade-finder" id="shade-finder">
+    <div class="shade-finder-content">
+      <h2>Find Your Perfect Shade</h2>
+      <p>Upload a selfie or answer a few quick questions to discover your foundation match under African lighting.</p>
+      <button class="btn-primary">Try Shade Finder</button>
+    </div>
+  </section>
+
+  <!-- Extra Content under CTA -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>What if I pick the wrong shade?</h3>
+        <p>No stress — we offer a free exchange on your first shade mismatch.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Do you ship nationwide?</h3>
+        <p>Yes! Fast delivery across South Africa in just 7-14 business days.</p>
+      </div>
+      <div class="feature-card">
+        <h3>How can I pay?</h3>
+        <p>We accept PayFast, EFT, SnapScan, Zapper, Capitec Pay, and all major cards.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="promises-section">
+    <h2>Our Promises to You</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Secure Payments</h3>
+        <p>Shop with confidence using trusted South African payment partners.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Shade Match Guarantee</h3>
+        <p>Find your perfect match — or exchange it free.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Fast Delivery</h3>
+        <p>Nationwide delivery within 7-14 working days, tracked to your door.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span> Fenty Beauty by Rihanna. Localized for South Africa.<br>
+    Designed by Shirinda for Digital Marketing
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const searchIcon = document.getElementById("search-icon");
+    const searchBox = document.getElementById("search-box");
+    searchIcon.addEventListener("click", () => {
+      searchBox.style.display = searchBox.style.display === "block" ? "none" : "block";
+    });
+  </script>
+</body>
+</html>
